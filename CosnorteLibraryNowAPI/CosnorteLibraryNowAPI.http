@@ -1,0 +1,6 @@
+@CosnorteLibraryNowAPI_HostAddress = http://localhost:5265
+
+GET {{CosnorteLibraryNowAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
