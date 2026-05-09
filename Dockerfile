@@ -6,10 +6,10 @@ ENV ASNETCORE_URLS=https://+:8080
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 COPY . .
-RUN dotnet restore
-RUN dotnet publish -c Reslease -o /app/out
+RUN dotnet restore  "MuitLibraryNowAPI/MuitLibraryNowAPI.csproj"
+RUN dotnet publish "MuitLibraryNowAPI/MuitLibraryNowAPI.csproj" -c Reslease -o /app/out
 
 FROM base AS final
 WORKDIR /app
 COPY --from=build /app/out .
-ENTRYPOINT ["dotnet", "CellonaLibraryNowAPI.dll"]
+ENTRYPOINT ["dotnet", "MuitLibraryNowAPI.dll"]
