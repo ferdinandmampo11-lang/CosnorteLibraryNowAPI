@@ -12,20 +12,20 @@ namespace CosnorteLibraryNowAPI.Controllers
             new Book
             {
                 Id = 1,
-                Title = "The Line of Beauty",
-                Author = "Alan Hollinghurst",
-                Genre = "Literary fiction",
+                Title = "Ruined King: A League of Legends Story",
+                Author = "Airship Syndicate",
+                Genre = "Role-playing gamen",
                 Available = true,
-                PublishedYear = 2004
+                PublishedYear = 2021
             },
             new Book
             {
                 Id = 2,
-                Title = "The Master",
-                Author = "Colm Tóibín",
+                Title = "CONVERGENCE: A League of Legends Stor",
+                Author = "Double Stallion",
                 Genre = "Historical fiction / Literary fiction",
                 Available = true,
-                PublishedYear = 2004
+                PublishedYear = 2023
             },
         };
 
