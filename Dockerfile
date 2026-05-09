@@ -21,10 +21,10 @@ WORKDIR /src
 COPY . .
 
 # Restore dependencies
-RUN dotnet restore "CosnorteLibraryNowAPI/CosnorteLibraryNowAPI.csproj"
+RUN dotnet restore "*.csproj"
 
 # Publish application
-RUN dotnet publish "CosnorteLibraryNowAPI/CosnorteLibraryNowAPI.csproj" \
+RUN dotnet publish "*.csproj" \
     -c Release \
     -o /app/out
 
