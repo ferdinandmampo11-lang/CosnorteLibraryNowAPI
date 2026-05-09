@@ -1,7 +1,7 @@
 ﻿using CosnorteLibraryNowAPI.models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CosnorteLibraryNowAPI.Controllers
+namespace MuitLibraryNowAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
