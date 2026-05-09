@@ -6,10 +6,10 @@ ENV ASPNETCORE_URLS=https://+:8080
 FROM mcr.mircosoft.com/dotnet/sdk:8.0 AS build
 WORKDIR  /src
 COPY . .
-RUN dotnet restore
-RUN dotnet publish -c Release -o /app/out
+RUN dotnet restore "MuitLibraryNowAPI/MuitLibraryNowAPI.csproj"
+RUN dotnet publish "MuitLibraryNowAPI/MuitLibraryNowAPI.csproj" -c Release -o /app/out
 
 FROM base AS final 
 WORKDIR /app
 COPY --from=build /app/out .
-ENTRYPOINT ["dotnet", "MuitLibraryNowAPI.ddl"Js
+ENTRYPOINT ["dotnet", "MuitLibraryNowAPI.ddl"]
